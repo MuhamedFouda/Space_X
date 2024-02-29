@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: transparent;
+    color: white;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 15rem;
+}
+
+nav h1 {
+    padding-top: 3px;
+}
+
+nav span {
+    font-family: 'Metamorphous', serif;
+    font-size: 39px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    behavior: smooth;
+    transition-delay: .400s;
+    text-decoration: underline;
+}
+.pages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5rem;
+    padding-top: 16px;
+
+}
+
+nav i {
+    padding-top: 15px;
+}
+/* loader start */
+.sk-folding-cube {
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  
+  .sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); 
+  }
+  .sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+            animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  .sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+            transform: scale(1.1) rotateZ(90deg);
+  }
+  .sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+            transform: scale(1.1) rotateZ(180deg);
+  }
+  .sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+            transform: scale(1.1) rotateZ(270deg);
+  }
+  .sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s; 
+  }
+  .sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  @-webkit-keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    } 
+  }
+  
+  @keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    }
+  }
+  .loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    z-index: 10;
+    background-color: orangered;
+  }
+/* loader end */
+
+
+
+.screen1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./pictures/f9_feature.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.screen1 .content {
+    height: 5rem;
+    width: 40rem;
+    color: white;
+    position: absolute;
+    align-items: center;
+    top: 30%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.content h2 {
+    font-size: 36px;
+    font-weight: 900;
+    font: 100px/85px Archivo Black, Arial, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -6px;
+
+}
+
+.screen2 {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.screen2 h2 {
+    font-size: 35px;
+    font-weight: 400;
+    font: 100px/85px Archivo Black, Arial, Verdana, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -6px;
+}
+
+.screen2 p {
+    font-size: large;
+    margin-left: 1rem;
+}
+
+.screen2 div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.screen3 {
+    background-image: url(./pictures/WebsiteF9Fairings_Render_Desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.screen3 .part1,
+.screen3 .part2 {
+    margin-left: 6rem;
+    margin-top: 3rem;
+    width: 35%;
+    color: white;
+}
+
+.screen3 .part2 div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.screen3 span {
+    color: gray;
+}
+
+.screen4 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.screen4 img {
+    width: 100%;
+    height: 100vh;
+}
+
+.screen4 div {
+    position: absolute;
+    bottom: 7rem;
+    left: 6rem;
+    color: white;
+}
+
+.screen4 div h2 {
+    font-size: 10px;
+    font: 37px/20px Archivo Black, Arial, Verdana, sans-serif;
+    text-transform: uppercase;
+
+}
+
+.screen5 {
+    width: 100%;
+    height: 108vh;
+    background-image: url(./pictures/Merlin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.ss p,
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.ss h2 {
+    font-size: 10px;
+    font: 37px/20px Archivo Black, Arial, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.screen5 .part1,
+.part2 {
+    width: 50%;
+}
+
+.screen5 .part1 {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2rem;
+
+
+}
+
+.screen5 .part2 div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.screen5 .part1,
+.part2 {
+    margin-left: 8rem;
+    margin-top: 3rem;
+    width: 35%;
+    color: white;
+}
+
+.screen5 .part2 div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.screen5 span {
+    color: gray;
+}
+
+.screen6 {
+    width: 100%;
+    height: 100vh;
+}
+
+.screen6 img {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Swiper css */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* end swiper css */
+
+
+.screen7 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 14rem;
+    color: white;
+}
+
+#mm {
+    width: 15rem;
+    height: 10rem;
+    border-left: 2px solid #fff;
+    margin-left: 5rem;
+    position: absolute;
+    left: 45%;
+    top: 19%;
+}
+
+.screen7 button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.screen7 .button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.screen7 span {
+    color: gray;
+}
+
+.screen7 h2 {
+    position: absolute;
+    top: 2rem;
+}
+
+.under {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.under a{
+    text-decoration: none;
+    color: white;
+}
